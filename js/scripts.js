@@ -6,7 +6,7 @@ function Pizza(toppings, size) {
   this.cost = 0;
 }
 
-let newPizza = new Pizza(["pepperoni", "mushrooms"], "medium")
+let newPizza = new Pizza(["pepperoni", "mushrooms", "anchovies"], "XL")
 
 Pizza.prototype.determineCost = function() {
   if (this.size === "medium") {
@@ -17,24 +17,19 @@ Pizza.prototype.determineCost = function() {
     this.cost += 26;
   };
   
-  this.toppings.forEach(function(topping) {
-    this.cost += this.toppings.length;
-  });
+  this.cost += this.toppings.length;
+
   return this.cost;
 };
 
 //UI Logic
-
-function handleFormSubmission(event) {
-  event.preventDefault();
-  let newPizza = new Pizza();
-
-  const toppingsList = document.getElementsByName("toppingz");
-  toppingsList.forEach(function(topping){
-    if (topping.checked){
-      newPizza.toppings.push(topping.value)
-    }
-  })
-  console.log(newPizza.toppings)
+  
+window.onload = function () {
+  document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    let newPizza = new Pizza();
+    const toppingSelection = document.querySelectorAll("input[name="toppingz"]:checked").value;
+    const sizeSelection = document.querySelector("input[name="size"]:checked").value;
+  });
 }
 
