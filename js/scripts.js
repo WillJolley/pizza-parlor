@@ -15,12 +15,12 @@ Pizza.prototype.determineCost = function() {
     this.cost += 22;
   } else {
     this.cost += 26;
-  }
+  };
+  
+  this.toppings.forEach(function(topping) {
+    this.cost += this.toppings.length;
+  });
   return this.cost;
-
-  //this.toppings.forEach(function(topping) {
-    //this.cost += 1;
-  //})
 };
 
 //UI Logic

@@ -13,5 +13,5 @@ Expected Output: 18
 Test: "It should add a dollar to the cost for each topping selected." 
 Code: 
 const myPizza = new Pizza(["anchovies", "pineapple"], "medium");
-myPizza.determineCost;
+myPizza.determineCost();
 Expected Output: 20
