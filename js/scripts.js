@@ -16,5 +16,25 @@ Pizza.prototype.determineCost = function() {
   } else {
     this.cost += 26
   }
+  return this.cost;
+
+  //this.toppings.forEach(function(topping) {
+    //this.cost += 1;
+  //})
 };
+
+//UI Logic
+
+function handleFormSubmission(event) {
+  event.preventDefault();
+  let newPizza = new Pizza();
+
+  const toppingsList = document.getElementsByName("toppingz");
+  toppingsList.forEach(function(topping){
+    if (topping.checked){
+      newPizza.toppings.push(topping.value)
+    }
+  })
+  console.log(newPizza.toppings)
+}
 
