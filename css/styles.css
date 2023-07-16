@@ -3,12 +3,14 @@ body {
 }
 
 form {
-  background-color: lightyellow;
+  background-color: darkslategrey;
+  margin: 15px;
+  padding: 20px;
 }
 
 button {
   padding: 20px;
-  margin: 20px;
+  margin: 30px;
   box-sizing: border-box;
 }
 
@@ -16,3 +18,4 @@ p {
   font-size: larger;
   background-color: gainsboro;
 }
+
