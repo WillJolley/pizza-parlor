@@ -4,6 +4,8 @@
 
 #### _A webpage for ordering a pizza_
 
+https://willjolley.github.io/pizza-parlor/
+
 ## Technologies Used
 
 * _Javascript_
