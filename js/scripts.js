@@ -14,7 +14,7 @@ Pizza.prototype.determineCost = function() {
   } else if (this.size === "large") {
     this.cost += 22;
   } else {
-    this.cost += 26
+    this.cost += 26;
   }
   return this.cost;
 
