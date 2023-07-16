@@ -28,14 +28,14 @@ function handleForm(event) {
   const toppingSelectionArray = Array.from(toppingSelection);
   const sizeSelection = document.querySelector("input[name='size']:checked");
   
-  let newPizza = new Pizza(toppingSelectionArray, sizeSelection);
+  let newPizza = new Pizza(toppingSelectionArray, sizeSelection.value);
   newPizza.determineCost();
 
   const p = document.createElement("p");
-  p.append("$"+newPizza.cost+".00");
+  p.append("$" + newPizza.cost + ".00");
   document.body.append(p);
 }
 
-//window.addEventListener("load", function() {
-  //this.document.querySelector("form").addEventListener("submit", handleForm)
-//});
+window.addEventListener("load", function() {
+  this.document.querySelector("form").addEventListener("submit", handleForm)
+});
