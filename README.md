@@ -8,30 +8,32 @@ https://willjolley.github.io/pizza-parlor/
 
 ## Technologies Used
 
-* _Javascript_
-* _HTML_
-* _CSS_
+* Javascript
+* HTML
+* CSS
 
 
 ## Description
 
-_pizza-parlor is a webpage that invites users to order a pizza by selecting a size and toppings, and returns the price of their pizza based on their selections._
+pizza-parlor is a webpage that invites users to order a pizza by selecting a size and toppings, and returns the price of their pizza based on their selections.
 
 ## Setup/Installation Requirements
 
-* _Clone this repository to your desktop._
-* _Navigate to the top level of the directory._
-* _Open index.html in your browser.__
+* Clone this repository to your desktop.
+* Navigate to the top level of the directory.
+* Open index.html in your browser.
 
 ## Known Bugs
 
-* _Unless the page is refreshed, the prices of previously ordered pizzas remain on the page._ 
+* Unless the page is refreshed, the prices of previously ordered pizzas remain on the page.
 
 ## License
 
-_e-mail me at yeswilljolley@gmail.com with any issues, questions, ideas, concerns._
+e-mail me at yeswilljolley@gmail.com with any issues, questions, ideas, concerns.
 
-Copyright (c) _2023_ _Will Jolley_
+MIT
+
+Copyright (c) 2023 Will Jolley
 
 
 
